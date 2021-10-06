@@ -29,10 +29,19 @@ cidade = ""
 estado = ""
 pais = ""
 salario = 0
+msg = "Olá, meu nome é Robert Leone, moro na Rua Mineradores, 5458 no Bairro do Paraíso,\nCEP: 06532156, São Bernardo do Campo, São Paulo, Brasil." \
+"Atualmente tenho 21 anos e meu\nendereço para contato é ruanota@hotmail.com e meu telefone é 940028922.\n" \
+"Atualmente sou um estagiário no campo de Análise de Dados e Performance na minha atual empresa ganhando 1000.25 reais,\n" \
+"este programa serve apenas como um modelo resumo para eu fazer a tarefa e os dados utilizados acima são fictícios.\n" \
+"Estudo na FATEC de São Bernardo do Campo e esta é a atividade para a matéria “Algoritmo e Programação de Computadores”,\nestou utilizando a linguagem Python.\n" \
+"Futuramente pretendo me tornar um Data Science, mas por enquanto estou com foco em Análise de Dados e Business Intelligence,\n" \
+"futuramente pretendo utilizar esse material para fazer algumas análises de slicing no spark, será bem proveitoso para mim.\n" \
+"Portanto, desconsidere todos os erros de português contidos nessa string, ela será meramente guardada para se captar dados fictícios\ncitados acima." \
+"Irei utilizar o PyCharm para uma facilidade melhor em mexer com strings, espero que esse arquivo seja proveitoso para conseguir\ntodos os pontos necessários.\n"
 
-#Função
+# Função
 def startMenu():
-    #Definindo variáveis globais
+    # Definindo variáveis globais
     global menu
     global aux
     global nome
@@ -59,18 +68,18 @@ def startMenu():
         if menu == 1:
 
             # Entradas
-            nome = str(input('Digite seu Nome: '))
-            email = str(input('Digite seu E-mail: '))
-            idade = int(input('Digite sua Idade: '))
-            telefone = int(input('Digite seu Telefone: '))
-            rua = str(input('Digite sua Rua: '))
-            numero = int(input('Digite seu número: '))
-            cep = int(input('Digite seu CEP: '))
-            bairro = str(input('Digite seu Bairro: '))
-            cidade = str(input('Digite sua Cidade: '))
-            estado = str(input('Digite seu Estado: '))
-            pais = str(input('Digite seu País: '))
-            salario = float(input('Digite seu Salário: '))
+            nome = str(msg[16:28])
+            email = str(msg[193:213])
+            idade = int(msg[154:157])
+            telefone = int(msg[230:239])
+            rua = str(msg[42:53])
+            numero = int(msg[55:59])
+            cep = int(msg[88:95])
+            bairro = str(msg[73:80])
+            cidade = str(msg[97:118])
+            estado = str(msg[120:129])
+            pais = str(msg[131:137])
+            salario = float(msg[344:353])
 
             # Formatações
             telefone = str(telefone)
@@ -79,7 +88,7 @@ def startMenu():
             cep = f'{cep[0:5]}-{cep[5:]}'
 
             os.system('cls')
-            time.sleep(3)
+            time.sleep(1)
 
             print('Informações guardadas com sucesso')
 
@@ -104,7 +113,7 @@ def startMenu():
               f'País: {pais}\n'
               f'Salário: {salario}\n')
 
-        time.sleep(5)
+        time.sleep(1)
 
         # Caso o usuário queira repetir
         print("-------Gostaria de repetir?-------\n"
