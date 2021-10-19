@@ -48,7 +48,7 @@ class operationTax:
 while True:
 
     print("\n-------MENU-------\n"
-          "1 - Ler e Exibir\n"
+          "1 - Ler\n"
           "2 - Exibir\n"
           "3 - Sair\n")
 
@@ -61,7 +61,7 @@ while True:
         day = int(input('Digite os dias em atraso: '))
 
         for x in range(3):
-            print('.')
+            print('. ', end = '')
             time.sleep(0.5)
 
 
