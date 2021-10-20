@@ -1,21 +1,24 @@
 # -*- coding: utf-8 -*-
+# Importa bibliotecas para limpar tela e pausar a tela
 import os
-import sys
-import math
 import time
 
+# Função que inputa e retorna a variável
 def lern1():
     n1 = float(input('Digite N1: '))
     return n1
 
+# Função que inputa e retorna a variável
 def lern2():
     n2 = float(input('Digite N2: '))
     return n2
 
+# Função que calcula a média de 2 variáveis
 def getmedia(nota1,nota2):
     med = (nota1+nota2)/2
     return med
 
+# Função que inputa e retorna a variável
 def exibir ( media ):
 
     print(f'Média:{media:.2f}\n')
