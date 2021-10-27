@@ -10,18 +10,21 @@ sugestão  site  Brasil  Escola).
 Faça  um  menu  com  while  infinito  para controlar  o  programa  e  ao  final
 exiba  todas  as  variáveis  do  problema  para  que  o usuário possa conferir os resultados de sua aplicação. 
 '''
-
+# Taxa de 5%
 tax = 5/100
 
+# Input do período em ano e convertido a mês
 def valoresPeriodo():
     periodo = float(input('Digite o período em anos: '))
     periodo = periodo * 12
     return periodo
 
+# Input do montante total
 def valoresMontante():
     montante = float(input('Digite o montante total: '))
     return montante 
-    
+
+# Cálculo da taxa de juros simples e do capital     
 def capitalTotal(a,b):
     jey = 1+(tax*b)
 
@@ -29,6 +32,7 @@ def capitalTotal(a,b):
 
     return capital
 
+# Processo de exibição dos resultados
 def exibirJuros(a,b,c):
     j = 1+(tax*b)
 
@@ -37,6 +41,7 @@ def exibirJuros(a,b,c):
           f'A taxa é de {j:.2f}\n'
           f'E seu capital inicial é de {c:.2f}')
 
+# Controle do menu
 def controleOne():
     while True:
         print('1 - Ler\n'
@@ -60,4 +65,5 @@ def controleOne():
         else:
             print('Item inválido!')
 
+# Chamada da função menu
 controleOne()

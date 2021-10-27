@@ -43,7 +43,7 @@ def exibir(a,b,c,delta,status):
         x1 = calX1(a,b,delta)
         x2 = calX2(a,b,delta)
         print(f'Valor x1:{x1}\nValor x2:{x2}')
-        time.sleep(2)
+        time.sleep(7)
 
 def controle():
     while True:
@@ -51,10 +51,12 @@ def controle():
         itenmenu=int(input('\n1 ler\n2 calcular\n3 exibir\n4sair\nitem:'))
         if itenmenu==1:
             a = 0
-            while a==0: # o laço continua enquanto a for zero
+            while a==0: 
+
                 a = lerA()
                 b = lerB()
                 c = lerC()
+
         elif itenmenu == 2:
             delta = calDelta(a,b,c)
             status = anaStatus( delta )
@@ -68,5 +70,5 @@ def controle():
             print('Selecione um item válido!')
             time.sleep(5)
 
-# Para executar o programa chamamos a sub rotina controle ()
+
 controle()
