@@ -34,11 +34,11 @@ def capitalTotal(a,b):
 
 # Processo de exibição dos resultados
 def exibirJuros(a,b,c):
-    j = 1+(tax*b)
+    jey = 1+(tax*b)
 
     print(f'Do montante de {a}\n'
           f'No período de {b/12} anos\n'
-          f'A taxa é de {j:.2f}\n'
+          f'A taxa é de {jey:.2f}\n'
           f'E seu capital inicial é de {c:.2f}')
 
 # Controle do menu
